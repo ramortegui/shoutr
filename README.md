@@ -1,24 +1,31 @@
-# README
+# Shout 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Service to simulate twitter using Rails 5
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+This exercise is based on the upcase course intermediate rails 5.
 
-* System dependencies
+## Dependencies
 
-* Configuration
+* Postgres
+* Rails > 5.0
+* Java
 
-* Database creation
+## Instructions
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Clone the repository
+* Configure the database
+```
+rails db:create
+rails db:migrate
+```
+* Start sorl 
+```
+bundle exec rake sunspot:solr:start
+```
+* Start rails server
+```
+rails s
+```
+* Check your browser http://localhost:3000
