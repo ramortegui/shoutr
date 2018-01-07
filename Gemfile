@@ -16,8 +16,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'clearance'
 gem 'paperclip'
+gem 'sunspot_rails'
 
 group :development, :test do
+  gem 'sunspot_solr'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
